@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Neoman</title>
+    <link rel="stylesheet" href="./animation/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12/dist/gsap.min.js"></script>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/media/Black And White Planet Street Wear Logo_processed.png"
+    />
+  </head>
+
+  <body>
+    <!-- <div class="pageline1" id="pageline1"></div>
+    <div class="pageline2" id="pageline2"></div>
+    <div class="pageline3" id="pageline3"></div> -->
+    <nav class="navbar">
+      <div class="logo">
+        <img
+          src="./media/Black And White Planet Street Wear Logo_processed.png"
+          alt=""
+          width="140px"
+          height="130px"
+        />
+      </div>
+      <div class="menu">
+        <div class="line line1"></div>
+        <div class="line line2"></div>
+        <div class="line line3"></div>
+        
+      </div>
+      <div class="navmenucount">
+        <ul class="navbarmenue">
+          <li><a target="_blank" href="./index.html" data-text="Home">Home</a></li>
+          <li><a target="_blank" href="./planets.html" data-text="Planets">Planets</a></li>
+          <li><a target="_blank" href="./somestuff.html" data-text="Asteroids">Asteroids</a></li>
+          <li><a target="_blank" href="./index1.html" data-text="dwarf palnet">Dwarf Planet</a></li>       
+          <li><a target="_blank" href="./stars.html.html" data-text="stars">Stars</a></li>   
+           
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <section style="height: 100vh">
+        <div class="hero">
+          <div class="video-background">
+            <video autoplay muted loop id="background-video">
+              <source src="./media/background front.mp4" type="video/mp4" />
+
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div
+            svg="animated"
+            class="background_pattern w-embed"
+            style="will-change: opacity; transition: opacity 400ms"
+          >
+            <!-- <svg
+              width="100%"
+              height="100%"
+              viewBox="0 0 1822 981"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"
+              xmlns="http://www.w3.org/2000/svg"
+            > -->
+              <path
+                stroke="white"
+                d="M847 95a64 64 0 1 0 128 0a64 64 0 1 0 -128 0"
+                stroke-dasharray="402.1808166503906"
+                stroke-dashoffset="402.1808166503906"
+                style="
+                  transition: stroke-dashoffset 5000ms ease-out;
+                  stroke-dashoffset: 0px;
+                "
+              ></path>
+              <path
+                d="M911 1L1821 981"
+                stroke-dasharray="1337.34814453125"
+                stroke-dashoffset="1337.34814453125"
+                style="
+                  transition: stroke-dashoffset 5000ms ease-out;
+                  stroke-dashoffset: 0px;
+                "
+              ></path>
+              <path
+                d="M911 1L1821 441"
+                stroke-dasharray="1010.791748046875"
+                stroke-dashoffset="1010.791748046875"
+                style="
+                  transition: stroke-dashoffset 5000ms ease-out;
+                  stroke-dashoffset: 0px;
+                "
+              ></path>
+              <path
+                d="M911 1L1 981"
+                stroke-dasharray="1337.34814453125"
+                stroke-dashoffset="1337.34814453125"
+                style="
+                  transition: stroke-dashoffset 5000ms ease-out;
+                  stroke-dashoffset: 0px;
+                "
+              ></path>
+              <path
+                d="M911 1L1 441"
+                stroke-dasharray="1010.791748046875"
+                stroke-dashoffset="1010.791748046875"
+                style="
+                  transition: stroke-dashoffset 5000ms ease-out;
+                  stroke-dashoffset: 0px;
+                "
+              ></path>
+              <path
+                d="M577 493.5a334.5 334.5 0 1 0 669 0a334.5 334.5 0 1 0 -669 0"
+                stroke-dasharray="2102.0224609375"
+                stroke-dashoffset="2102.0224609375"
+                style="
+                  transition: stroke-dashoffset 5000ms ease-out;
+                  stroke-dashoffset: 0px;
+                "
+              ></path>
+              <path
+                d="M910 828L910 980"
+                stroke-dasharray="152"
+                stroke-dashoffset="152"
+                style="
+                  transition: stroke-dashoffset 5000ms ease-out;
+                  stroke-dashoffset: 0px;
+                "
+              ></path>
+              <path
+                d="M910.5 1.5V31"
+                stroke-dasharray="29.5"
+                stroke-dashoffset="29.5"
+                style="
+                  transition: stroke-dashoffset 5000ms ease-out;
+                  stroke-dashoffset: 0px;
+                "
+              ></path>
+            </svg>
+          </div>
+          <div class="headline">
+            <h1>
+              <div class="horizon-icon w-embed">
+                <svg
+                  width="50%"
+                  height="50%"
+                  viewBox="0 0 169 173"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M107.139 170.029C74.4822 179.334 37.3077 166.209 17.1499 138.676C-15.6178 95.6846 0.43302 30.7669 49.4513 8.2714C97.6371 -15.1847 157.411 13.4764 169 66.1298C167.857 62.0865 166.525 58.0989 164.86 54.2454C159.931 42.7184 152.45 32.3195 143.092 24.0317C118.428 1.45796 80.5428 -3.82526 50.6279 10.7846C16.6503 26.5337 -3.42983 66.5431 4.28477 103.403C13.3314 150.739 60.5959 181.098 107.139 170.029Z"
+                    fill="url(#paint0_linear_72_46)"
+                  ></path>
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_72_46"
+                      x1="100.701"
+                      y1="97.5722"
+                      x2="19.4195"
+                      y2="38.6327"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="white" stop-opacity="0"></stop>
+                      <stop offset="1" stop-color="white"></stop>
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <span class="headlinetext"
+                ><div><span>N</span></div>
+                <div><span>E</span></div>
+                <div><span>O</span></div>
+                <div><span>M</span></div>
+                <div><span>A</span></div>
+                <div><span>N</span></div>
+                </span
+              >
+              <br />
+              <!-- <span class="headlinetext" style="margin-top: -90px"
+                ><div><span>C</span></div>
+                <div><span>H</span></div>
+                <div><span>A</span></div>
+                <div><span>S</span></div>
+                <div><span>E</span></div>
+                <div><span>R</span></div>
+                <div><span>S</span></div></span
+              > -->
+            </h1>
+          </div>
+          <!-- <div class="sunlight">
+            <div class="glowing-sun"></div>
+          </div> -->
+        </div>
+      </section>
+      <section id="solarsysstem">
+        <iframe class="solarsystem"
+          src="https://www.solarsystemscope.com/iframe"
+          width="500"
+          height="400"
+          style="min-width: 100vw; min-height: 100vh; border: 2px solid #0f5c6e"
+        ></iframe>
+      </section>
+      <!-- partial -->
+
+      <!-- loading page -->
+
+      <div class="i-me"></div>
+
+      <!-- <div class="loading_page">
+<div class="center">
+  <div class="ring"></div>
+  <span class="span_ring"><em>loading...</em></span>
+</div>
+</div> -->
+      <!-- cursor -->
+      <div id="dot" class="dot"></div>
+      <div id="ball"></div>
+    </main>
+    <script src="./script/script.js"></script>
+  </body>
+</html>

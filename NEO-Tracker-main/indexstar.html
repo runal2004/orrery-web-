@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System</title>
+    <link rel="stylesheet" href="stylesstar.css">
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/media/Black And White Planet Street Wear Logo_processed.png"
+    />
+</head>
+<body>
+    <div class="container">
+        <h1>Our Near Stars</h1>
+        <div class="solar-system">
+            <!-- The Sun -->
+            <div class="celestial-body sun" onclick="showInfo('sun')">
+                <p class="label">Sun</p>
+            </div>
+
+            <!-- The Planets -->
+            <div class="celestial-body mercury" onclick="showInfo('mercury')">
+                <p class="label">S2 TAU CET</p>
+            </div>
+            <div class="celestial-body venus" onclick="showInfo('venus')">
+                <p class="label">18 EPS ERI</p>
+            </div>
+            <div class="celestial-body earth" onclick="showInfo('earth')">
+                <p class="label">RIGI KENTAURUS</p>
+            </div>
+            <div class="celestial-body mars" onclick="showInfo('mars')">
+                <p class="label">EPS IND</p>
+            </div>
+            <div class="celestial-body jupiter" onclick="showInfo('jupiter')">
+                <p class="label">SIRIUS</p>
+            </div>
+            <div class="celestial-body saturn" onclick="showInfo('saturn')">
+                <p class="label">PROCYON</p>
+            </div>
+          <!---  <div class="celestial-body uranus" onclick="showInfo('uranus')">
+                <p class="label">Uranus</p>
+            </div>
+            <div class="celestial-body neptune" onclick="showInfo('neptune')">
+                <p class="label">Neptune</p>
+            </div>-->
+        </div>
+
+        <div id="info-box" class="info-box">
+            <p id="info-text">Click on a celestial body to learn more!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

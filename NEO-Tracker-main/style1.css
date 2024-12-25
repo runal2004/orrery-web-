@@ -1,0 +1,130 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  header h1 {
+    font-size: 2.5em;
+    color: #2c3e50;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Home Page Links */
+  .home-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .planet-link {
+    display: inline-block;
+    padding: 15px 25px;
+    background-color: #2980b9;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+  }
+  
+  .planet-link:hover {
+    background-color: #1f6391;
+  }
+  
+  /* Dwarf Planet Section */
+  .dwarf-planet {
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+  }
+  
+  .dwarf-planet img {
+    width: 300px;
+    object-fit: cover;
+  }
+  
+  .info {
+    padding: 20px;
+    position: relative;
+    flex: 1;
+  }
+  
+  .info h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #2980b9;
+  }
+  
+  .info p {
+    font-size: 1em;
+    text-align: justify;
+  }
+  
+  /* Navigation Arrows */
+  .nav-arrows {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .nav-arrows a {
+    text-decoration: none;
+    font-size: 2em;
+    color: #2980b9;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-arrows a:hover {
+    color: #1f6391;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .dwarf-planet {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .dwarf-planet img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .info {
+      padding: 15px;
+    }
+  
+    .info h2 {
+      text-align: center;
+    }
+  
+    .nav-arrows {
+      width: 100%;
+      padding: 0 20px;
+    }
+  }
+  
